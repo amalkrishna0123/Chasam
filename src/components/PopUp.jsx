@@ -10,12 +10,12 @@ import { LuDot } from "react-icons/lu";
 const PopUp = ({ openPopUp, setOpenPopUp }) => {
   return (
     <div className="fixed top-0 bottom-0 left-0 right-0 bg-[#178000] z-[999]">
-      <div className=" absolute w-full bottom-0 py-2 bg-[#fff] z-[999] flex justify-center items-center gap-5">
-        <button className="TextFont px-10 py-2 rounded-lg bg-[#178000] text-[#fff] flex items-center gap-1 text-sm">
+      <div className=" absolute w-full bottom-0 py-2 bg-[#fff] z-[999] flex justify-center items-center gap-5 BoxShadow">
+        <button className="TextFont BoxShadow font-semibold px-10 py-2 rounded-lg bg-[#178000] text-[#fff] flex items-center gap-1 text-sm">
           <HiOutlineMail />
           Mail Us
         </button>
-        <button className="TextFont px-10 py-2 rounded-lg bg-[#178000] text-[#fff] flex items-center gap-1 text-sm">
+        <button className="TextFont BoxShadow px-10 py-2 font-semibold rounded-lg bg-[#178000] text-[#fff] flex items-center gap-1 text-sm">
           <MdLocalPhone />
           Contact Us
         </button>
@@ -84,24 +84,50 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
               </div>
             </div>
 
-            <div className="px-4 mb-2">
-              <div className="text-xl font-semibold text-[#000000] TextFont1">
+            <div className="px-4 mb-2 BoxShadow">
+              <div className="text-xl font-bold text-[#000000] TextFont1">
                 Krishna Thulasi Cough Syrup
               </div>
-              <div className="text-sm font-black text-[#248f00]">
+              <div className="text-sm font-semibold text-[#6e736d]">
                 Cough Syrup
               </div>
-              <div className="flex items-center gap-1 font-bold TextFont">
+              <div className="flex items-center font-bold TextFont">
                 <MdCurrencyRupee />
-                260
+                <span className="text-lg">260</span>
               </div>
             </div>
-            <div className="px-4 text-sm text-[#000000] mb-20 font-semibold">
+            <div className="px-4 text-[12px] text-[#000000] mb-3 font-semibold BoxShadow">
               <ul className="flex flex-col gap-1">
                 <li className="flex items-start"><span className="text-2xl"><LuDot/></span>Lorem ipsum dolor sit</li>
                 <li className="flex items-start"><span className="text-2xl"><LuDot/></span>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, veniam.</li>
                 <li className="flex items-start"><span className="text-2xl"><LuDot/></span>Lorem ipsum dolor sit lorem ipsum iii</li>
                 <li className="flex items-start"><span className="text-2xl"><LuDot/></span>Lorem ipsum dolor sit</li>
+              </ul>
+            </div>
+            {/* Other Details */}
+            <div className="px-4 text-sm text-[#000000] mb-20 font-semibold">
+              <div className="TextFont font-bold text-xl mb-2">Other Information</div>
+              <ul className="flex flex-col gap-1">
+                <li className="flex items-start w-full gap-2">
+                  <div className="w-[40%] flex text-[12px] items-center font-bold"><span className="text-2xl"><LuDot/></span>MRP</div>
+                  <div className="w-[60%] text-[12px]">: Rs. 260.00 inclussive of all taxes <span className="block">(MRP changes as per size selection)</span></div>
+                </li>
+                <li className="flex items-start w-full gap-2">
+                  <div className="w-[40%] flex text-[12px] items-center font-bold"><span className="text-2xl"><LuDot/></span>Net Qty</div>
+                  <div className="w-[60%] text-[12px]">: 1 N</div>
+                </li>
+                <li className="flex items-start w-full gap-2">
+                  <div className="w-[40%] flex text-[12px] items-center font-bold"><span className="text-2xl"><LuDot/></span>Manufactured By</div>
+                  <div className="w-[60%] text-[12px]">: Chasam Ayurvedic Clinic, Vythiri, Wayanad, Kerala</div>
+                </li>
+                <li className="flex items-center w-full gap-2">
+                  <div className="w-[40%] flex text-[12px] items-center font-bold"><span className="text-2xl"><LuDot/></span>Country Of Origin</div>
+                  <div className="w-[60%] text-[12px]">: India</div>
+                </li>
+                <li className="flex items-center w-full gap-2">
+                  <div className="w-[40%] flex text-[12px] items-center font-bold"><span className="text-2xl"><LuDot/></span>Customer Care Address</div>
+                  <div className="w-[60%] text-[12px]">: India</div>
+                </li>
               </ul>
             </div>
           </div>
