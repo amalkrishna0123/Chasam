@@ -37,7 +37,7 @@ const Home = () => {
           </div>
           <div className="relative text-[#fff] pr-2 pt-5 leading-tight">
             <div className="text-md text-[#B1C29E] text-end font-semibold">lorem ipsum</div>
-            <div className="text-2xl text-end font-semibold TextFont1">Lorem Ipsum</div>
+            <div className="text-2xl text-end font-bold TextFont1">Lorem Ipsum</div>
             <div className="text-[12px] text-[#B1C29E] text-end font-semibold">
               19th February 2025
             </div>
@@ -129,12 +129,12 @@ const Home = () => {
                 />
               </div>
               <div className="flex flex-col gap-1">
-                <div className="text-[#fff] font-medium TextFont1">
+                <div className="text-[#fff] font-bold TextFont1">
                   Krishna Thulasi Cough Syrup
                 </div>
                 <div className="text-[#fff] text-xl font-base flex gap-0.5 items-center">
                   <TbCoinRupee />{" "}
-                  <span className="text-[17px] font-semibold">260</span>
+                  <span className="text-[17px] font-bold">260</span>
                 </div>
               </div>
               <div className="absolute right-2 rounded-full bg-[#fff] top-2">
@@ -152,12 +152,12 @@ const Home = () => {
                 />
               </div>
               <div className="flex flex-col gap-1">
-                <div className="text-[#fff] font-medium TextFont1">
+                <div className="text-[#fff] font-bold TextFont1">
                   Khadi Natural Hair Oil
                 </div>
                 <div className="text-[#fff] text-xl font-base flex gap-0.5 items-center">
                   <TbCoinRupee />{" "}
-                  <span className="text-[17px] font-semibold">280</span>
+                  <span className="text-[17px] font-bold">280</span>
                 </div>
               </div>
               <div className="absolute right-2 rounded-full bg-[#fff] top-2">
@@ -175,12 +175,12 @@ const Home = () => {
                 />
               </div>
               <div className="flex flex-col gap-1">
-                <div className="text-[#fff] font-medium TextFont1">
+                <div className="text-[#fff] font-bold TextFont1">
                   Indhulekha Brinka Hair Oil
                 </div>
                 <div className="text-[#fff] text-xl font-base flex gap-0.5 items-center">
                   <TbCoinRupee />{" "}
-                  <span className="text-[17px] font-semibold">260</span>
+                  <span className="text-[17px] font-bold">260</span>
                 </div>
               </div>
               <div className="absolute right-2 rounded-full bg-[#fff] top-2">
@@ -198,12 +198,12 @@ const Home = () => {
                 />
               </div>
               <div className="flex flex-col gap-1">
-                <div className="text-[#fff] font-medium TextFont1">
+                <div className="text-[#fff] font-bold TextFont1">
                   COFOL Syrup
                 </div>
                 <div className="text-[#fff] text-xl font-base flex gap-0.5 items-center">
                   <TbCoinRupee />{" "}
-                  <span className="text-[17px] font-semibold">260</span>
+                  <span className="text-[17px] font-bold">260</span>
                 </div>
               </div>
               <div className="absolute right-2 rounded-full bg-[#fff] top-2">
