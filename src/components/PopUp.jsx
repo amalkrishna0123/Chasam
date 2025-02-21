@@ -35,22 +35,36 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
               </span>
             </div>
             {/* Images */}
-            <div className="w-[95%] flex justify-center items-center mx-auto p-2 rounded-3xl h-[300px] backdrop-blur-sm bg-[#02842f2c] mb-2 BoxShadow border-[#fff] border relative overflow-hidden">
-              <div className="w-full h-[300px] absolute">
-                <img
-                  src="https://i.pinimg.com/736x/b5/83/f8/b583f8122ce56da166e1cd9e5404fea0.jpg"
-                  alt=""
-                  className="w-full h-full object-cover opacity-90"
-                />
-              </div>
-              <div className="w-auto h-[250px] flex justify-center items-center">
-                <img
-                  src={li1}
-                  alt=""
-                  className="w-full h-full object-contain drop-shadow-md"
-                />
-              </div>
-            </div>
+            <div className="overflow-x-auto w-full scrollBar px-2">
+  <div className="flex gap-2 mb-3 w-max whitespace-nowrap">
+    <div className="w-[300px] flex justify-center items-center p-2 rounded-3xl h-[300px] backdrop-blur-sm bg-[#02842f2c] mb-2 BoxShadow border-[#fff] border relative overflow-hidden">
+      <div className="w-full h-[300px] absolute">
+        <img
+          src="https://i.pinimg.com/736x/b5/83/f8/b583f8122ce56da166e1cd9e5404fea0.jpg"
+          alt=""
+          className="w-full h-full object-cover opacity-90"
+        />
+      </div>
+      <div className="w-auto h-[250px] flex justify-center items-center">
+        <img src={li1} alt="" className="w-full h-full object-contain drop-shadow-md" />
+      </div>
+    </div>
+    <div className="w-[300px] flex justify-center items-center p-2 rounded-3xl h-[300px] backdrop-blur-sm bg-[#02842f2c] mb-2 BoxShadow border-[#fff] border relative overflow-hidden">
+      <div className="w-full h-[300px] absolute">
+        <img
+          src="https://i.pinimg.com/736x/b5/83/f8/b583f8122ce56da166e1cd9e5404fea0.jpg"
+          alt=""
+          className="w-full h-full object-cover opacity-90"
+        />
+      </div>
+      <div className="w-auto h-[250px] flex justify-center items-center">
+        <img src={li1} alt="" className="w-full h-full object-contain drop-shadow-md" />
+      </div>
+    </div>
+  </div>
+</div>
+
+            {/* Sub Images */}
             <div className="overflow-x-auto w-full scrollBar px-2">
               <div className="flex gap-2 mb-3 w-max">
                 <div className="w-[100px] h-[100px] p-2 bg-[#fff] shadow-2xl">
