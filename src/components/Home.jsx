@@ -70,7 +70,7 @@ const Home = () => {
                     alt=""
                   />
                 </div>
-                <span className="text-nowrap text-[#00aa0b]">Back Pain</span>
+                <span className="text-nowrap font-semibold text-[#00aa0b]">Back Pain</span>
               </li>
               <li className="flex justify-center items-center flex-col text-[12px] font-semibold gap-1">
                 <div className="w-[80px] h-[80px] rounded-full bg-[#1A1A19] overflow-hidden">
@@ -90,7 +90,7 @@ const Home = () => {
                     alt=""
                   />
                 </div>
-                <span className="text-nowrap">Weight Loss</span>
+                <span className="text-nowrap font-bold">Weight Loss</span>
               </li>
               <li className="flex justify-center items-center flex-col text-[12px] font-semibold gap-1">
                 <div className="w-[80px] h-[80px] rounded-full bg-[#1A1A19] overflow-hidden">
