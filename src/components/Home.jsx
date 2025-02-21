@@ -10,11 +10,13 @@ import { TbCoinRupee } from "react-icons/tb";
 import li1 from "../assets/li1.png";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import PopUp from "./PopUp";
-import li2 from "../assets/li2.png"
-import li3 from "../assets/li3.png"
-import li4 from "../assets/li4.png"
-import skin from "../assets/skin.jpg"
-
+import li2 from "../assets/li2.png";
+import li3 from "../assets/li3.png";
+import li4 from "../assets/li4.png";
+import skin from "../assets/skin.jpg";
+import hmimage1 from "../assets/homeimage1.png";
+import hmimage2 from "../assets/homeimage2.png";
+import hmimage3 from "../assets/homeimage3.png";
 
 
 const Home = () => {
@@ -36,23 +38,54 @@ const Home = () => {
             <img src={leaft2} alt="" />
           </div>
           <div className="relative text-[#fff] pr-2 pt-5 leading-tight">
-            <div className="text-md text-[#B1C29E] text-end font-semibold">lorem ipsum</div>
-            <div className="text-2xl text-end font-bold TextFont1">Lorem Ipsum</div>
+            <div className="text-md text-[#B1C29E] text-end font-semibold">
+              lorem ipsum
+            </div>
+            <div className="text-2xl text-end font-bold TextFont1">
+              Lorem Ipsum
+            </div>
             <div className="text-[12px] text-[#B1C29E] text-end font-semibold">
-              19th February 2025
+              lorem ipsum jui
             </div>
           </div>
           <div className="overflow-x-auto scrollBar">
             <div className="flex justify-between items-center gap-5 relative pt-[50px] px-2 mb-5">
-                <div className="w-[100px] h-[100px] overflow-hidden bg-[#EFE3C2] border border-[#fff] rounded-xl p-2">
-                <img src={ps1} alt="" className="w-full h-full object-contain" />
+              <div className="w-[100px] relative h-[100px] flex justify-center items-center flex-col gap-2 overflow-hidden bg-[#EFE3C2] border border-[#fff] rounded-xl">
+                <div className="w-[100px] relative h-[60px] overflow-hidden rounded-xl">
+                  <img
+                    src={hmimage1}
+                    alt=""
+                    className="w-full h-full object-contain drop-shadow-md"
+                  />
                 </div>
-                <div className="w-[100px] h-[100px] overflow-hidden bg-[#EFE3C2] border border-[#fff] rounded-xl p-2">
-                <img src={ps2} alt="" className="w-full h-full object-contain" />
+                <div className="text-center font-semibold text-[11px] leading-tight bottom-1">
+                  100% Organic
                 </div>
-                <div className="w-[100px] h-[100px] overflow-hidden bg-[#EFE3C2] border border-[#fff] rounded-xl p-2">
-                <img src={ps3} alt="" className="w-full h-full object-contain" />
+              </div>
+              <div className="w-[100px] relative h-[100px] flex justify-center items-center flex-col gap-2 overflow-hidden bg-[#EFE3C2] border border-[#fff] rounded-xl">
+                <div className="w-[100px] relative h-[60px] overflow-hidden rounded-xl">
+                  <img
+                    src={hmimage2}
+                    alt=""
+                    className="w-full h-full object-contain drop-shadow-md"
+                  />
                 </div>
+                <div className="text-center font-semibold text-[11px] leading-tight bottom-1">
+                  Genuine Product
+                </div>
+              </div>
+              <div className="w-[100px] relative h-[100px] flex justify-center items-center flex-col gap-2 overflow-hidden bg-[#EFE3C2] border border-[#fff] rounded-xl">
+                <div className="w-[100px] relative h-[60px] overflow-hidden rounded-xl">
+                  <img
+                    src={hmimage3}
+                    alt=""
+                    className="w-full h-full object-contain drop-shadow-md"
+                  />
+                </div>
+                <div className="text-center font-semibold text-[11px] leading-tight bottom-1">
+                  Quality Guranteed
+                </div>
+              </div>
             </div>
           </div>
           <div className="px-2 mb-5 relative">
@@ -70,7 +103,9 @@ const Home = () => {
                     alt=""
                   />
                 </div>
-                <span className="text-nowrap font-semibold text-[#00aa0b]">Back Pain</span>
+                <span className="text-nowrap font-semibold text-[#00aa0b]">
+                  Back Pain
+                </span>
               </li>
               <li className="flex justify-center items-center flex-col text-[12px] font-semibold gap-1">
                 <div className="w-[80px] h-[80px] rounded-full bg-[#1A1A19] overflow-hidden">
@@ -120,7 +155,10 @@ const Home = () => {
       <section className="w-full px-2">
         <div className="w-full flex flex-col gap-2 relative z-20 mb-16">
           <div className="w-full">
-            <div className="w-full relative flex gap-3 drop-shadow-sm h-[80px] p-1 ProductListBox backdrop-blur-sm rounded-xl border border-[#fff] bg-[#166000]" onClick={() => setOpenPopUp(!openPopUp) }>
+            <div
+              className="w-full relative flex gap-3 drop-shadow-sm h-[80px] p-1 ProductListBox backdrop-blur-sm rounded-xl border border-[#fff] bg-[#166000]"
+              onClick={() => setOpenPopUp(!openPopUp)}
+            >
               <div className="w-[70px] h-[70px] rounded-xl border-[#fff] border overflow-hidden p-1">
                 <img
                   src={li1}
@@ -143,7 +181,10 @@ const Home = () => {
             </div>
           </div>
           <div className="w-full">
-            <div className="w-full relative flex gap-3 drop-shadow-sm h-[80px] p-1 ProductListBox backdrop-blur-sm rounded-xl border border-[#fff] bg-[#166000]" onClick={() => setOpenPopUp(!openPopUp) }>
+            <div
+              className="w-full relative flex gap-3 drop-shadow-sm h-[80px] p-1 ProductListBox backdrop-blur-sm rounded-xl border border-[#fff] bg-[#166000]"
+              onClick={() => setOpenPopUp(!openPopUp)}
+            >
               <div className="w-[70px] h-[70px] rounded-xl border-[#fff] border overflow-hidden p-1">
                 <img
                   src={li4}
@@ -166,7 +207,10 @@ const Home = () => {
             </div>
           </div>
           <div className="w-full">
-            <div className="w-full relative flex gap-3 drop-shadow-sm h-[80px] p-1 ProductListBox backdrop-blur-sm rounded-xl border border-[#fff] bg-[#166000]" onClick={() => setOpenPopUp(!openPopUp) }>
+            <div
+              className="w-full relative flex gap-3 drop-shadow-sm h-[80px] p-1 ProductListBox backdrop-blur-sm rounded-xl border border-[#fff] bg-[#166000]"
+              onClick={() => setOpenPopUp(!openPopUp)}
+            >
               <div className="w-[70px] h-[70px] rounded-xl border-[#fff] border overflow-hidden p-1">
                 <img
                   src={li3}
@@ -189,7 +233,10 @@ const Home = () => {
             </div>
           </div>
           <div className="w-full">
-            <div className="w-full relative flex gap-3 drop-shadow-sm h-[80px] p-1 ProductListBox backdrop-blur-sm rounded-xl border border-[#fff] bg-[#166000]" onClick={() => setOpenPopUp(!openPopUp) }>
+            <div
+              className="w-full relative flex gap-3 drop-shadow-sm h-[80px] p-1 ProductListBox backdrop-blur-sm rounded-xl border border-[#fff] bg-[#166000]"
+              onClick={() => setOpenPopUp(!openPopUp)}
+            >
               <div className="w-[70px] h-[70px] rounded-xl border-[#fff] border overflow-hidden p-1">
                 <img
                   src={li2}

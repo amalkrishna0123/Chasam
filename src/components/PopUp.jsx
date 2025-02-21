@@ -36,33 +36,41 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
             </div>
             {/* Images */}
             <div className="overflow-x-auto w-full scrollBar px-2">
-  <div className="flex gap-2 mb-3 w-max whitespace-nowrap">
-    <div className="w-[300px] flex justify-center items-center p-2 rounded-3xl h-[300px] backdrop-blur-sm bg-[#02842f2c] mb-2 BoxShadow border-[#fff] border relative overflow-hidden">
-      <div className="w-full h-[300px] absolute">
-        <img
-          src="https://i.pinimg.com/736x/b5/83/f8/b583f8122ce56da166e1cd9e5404fea0.jpg"
-          alt=""
-          className="w-full h-full object-cover opacity-90"
-        />
-      </div>
-      <div className="w-auto h-[250px] flex justify-center items-center">
-        <img src={li1} alt="" className="w-full h-full object-contain drop-shadow-md" />
-      </div>
-    </div>
-    <div className="w-[300px] flex justify-center items-center p-2 rounded-3xl h-[300px] backdrop-blur-sm bg-[#02842f2c] mb-2 BoxShadow border-[#fff] border relative overflow-hidden">
-      <div className="w-full h-[300px] absolute">
-        <img
-          src="https://i.pinimg.com/736x/b5/83/f8/b583f8122ce56da166e1cd9e5404fea0.jpg"
-          alt=""
-          className="w-full h-full object-cover opacity-90"
-        />
-      </div>
-      <div className="w-auto h-[250px] flex justify-center items-center">
-        <img src={li1} alt="" className="w-full h-full object-contain drop-shadow-md" />
-      </div>
-    </div>
-  </div>
-</div>
+              <div className="flex gap-2 mb-3 w-max whitespace-nowrap">
+                <div className="w-[300px] flex justify-center items-center p-2 rounded-3xl h-[300px] backdrop-blur-sm bg-[#02842f2c] mb-2 BoxShadow border-[#fff] border relative overflow-hidden">
+                  <div className="w-full h-[300px] absolute">
+                    <img
+                      src="https://i.pinimg.com/736x/b5/83/f8/b583f8122ce56da166e1cd9e5404fea0.jpg"
+                      alt=""
+                      className="w-full h-full object-cover opacity-90"
+                    />
+                  </div>
+                  <div className="w-auto h-[250px] flex justify-center items-center">
+                    <img
+                      src={li1}
+                      alt=""
+                      className="w-full h-full object-contain drop-shadow-md"
+                    />
+                  </div>
+                </div>
+                <div className="w-[300px] flex justify-center items-center p-2 rounded-3xl h-[300px] backdrop-blur-sm bg-[#02842f2c] mb-2 BoxShadow border-[#fff] border relative overflow-hidden">
+                  <div className="w-full h-[300px] absolute">
+                    <img
+                      src="https://i.pinimg.com/736x/b5/83/f8/b583f8122ce56da166e1cd9e5404fea0.jpg"
+                      alt=""
+                      className="w-full h-full object-cover opacity-90"
+                    />
+                  </div>
+                  <div className="w-auto h-[250px] flex justify-center items-center">
+                    <img
+                      src={li1}
+                      alt=""
+                      className="w-full h-full object-contain drop-shadow-md"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
 
             {/* Sub Images */}
             <div className="overflow-x-auto w-full scrollBar px-2">
@@ -112,34 +120,89 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
             </div>
             <div className="px-4 text-[12px] text-[#000000] mb-3 font-semibold BoxShadow">
               <ul className="flex flex-col gap-1">
-                <li className="flex items-start"><span className="text-2xl"><LuDot/></span>Lorem ipsum dolor sit</li>
-                <li className="flex items-start"><span className="text-2xl"><LuDot/></span>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, veniam.</li>
-                <li className="flex items-start"><span className="text-2xl"><LuDot/></span>Lorem ipsum dolor sit lorem ipsum iii</li>
-                <li className="flex items-start"><span className="text-2xl"><LuDot/></span>Lorem ipsum dolor sit</li>
+                <li className="flex items-start">
+                  <span className="text-2xl">
+                    <LuDot />
+                  </span>
+                  Lorem ipsum dolor sit
+                </li>
+                <li className="flex items-start">
+                  <span className="text-2xl">
+                    <LuDot />
+                  </span>
+                  Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur,
+                  adipisicing elit. Nisi, veniam.
+                </li>
+                <li className="flex items-start">
+                  <span className="text-2xl">
+                    <LuDot />
+                  </span>
+                  Lorem ipsum dolor sit lorem ipsum iii
+                </li>
+                <li className="flex items-start">
+                  <span className="text-2xl">
+                    <LuDot />
+                  </span>
+                  Lorem ipsum dolor sit
+                </li>
               </ul>
             </div>
             {/* Other Details */}
             <div className="px-4 text-sm text-[#000000] mb-20 font-semibold">
-              <div className="TextFont font-bold text-xl mb-2">Other Information</div>
+              <div className="TextFont font-bold text-xl mb-2">
+                Other Information
+              </div>
               <ul className="flex flex-col gap-1">
                 <li className="flex items-start w-full gap-2">
-                  <div className="w-[40%] flex text-[12px] items-center font-bold"><span className="text-2xl"><LuDot/></span>MRP</div>
-                  <div className="w-[60%] text-[12px]">: Rs. 260.00 inclussive of all taxes <span className="block">(MRP changes as per size selection)</span></div>
+                  <div className="w-[40%] flex text-[12px] items-center font-bold">
+                    <span className="text-2xl">
+                      <LuDot />
+                    </span>
+                    MRP
+                  </div>
+                  <div className="w-[60%] text-[12px]">
+                    : Rs. 260.00 inclussive of all taxes{" "}
+                    <span className="block">
+                      (MRP changes as per size selection)
+                    </span>
+                  </div>
                 </li>
                 <li className="flex items-start w-full gap-2">
-                  <div className="w-[40%] flex text-[12px] items-center font-bold"><span className="text-2xl"><LuDot/></span>Net Qty</div>
+                  <div className="w-[40%] flex text-[12px] items-center font-bold">
+                    <span className="text-2xl">
+                      <LuDot />
+                    </span>
+                    Net Qty
+                  </div>
                   <div className="w-[60%] text-[12px]">: 1 N</div>
                 </li>
                 <li className="flex items-start w-full gap-2">
-                  <div className="w-[40%] flex text-[12px] items-center font-bold"><span className="text-2xl"><LuDot/></span>Manufactured By</div>
-                  <div className="w-[60%] text-[12px]">: Chasam Ayurvedic Clinic, Vythiri, Wayanad, Kerala</div>
+                  <div className="w-[40%] flex text-[12px] items-center font-bold">
+                    <span className="text-2xl">
+                      <LuDot />
+                    </span>
+                    Manufactured By
+                  </div>
+                  <div className="w-[60%] text-[12px]">
+                    : Chasam Ayurvedic Clinic, Vythiri, Wayanad, Kerala
+                  </div>
                 </li>
                 <li className="flex items-center w-full gap-2">
-                  <div className="w-[40%] flex text-[12px] items-center font-bold"><span className="text-2xl"><LuDot/></span>Country Of Origin</div>
+                  <div className="w-[40%] flex text-[12px] items-center font-bold">
+                    <span className="text-2xl">
+                      <LuDot />
+                    </span>
+                    Country Of Origin
+                  </div>
                   <div className="w-[60%] text-[12px]">: India</div>
                 </li>
                 <li className="flex items-center w-full gap-2">
-                  <div className="w-[40%] flex text-[12px] items-center font-bold"><span className="text-2xl"><LuDot/></span>Customer Care Address</div>
+                  <div className="w-[40%] flex text-[12px] items-center font-bold">
+                    <span className="text-2xl">
+                      <LuDot />
+                    </span>
+                    Customer Care Address
+                  </div>
                   <div className="w-[60%] text-[12px]">: India</div>
                 </li>
               </ul>
