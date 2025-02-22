@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <div className='fixed bottom-0 left-0 right-0 z-[998]'>
+    <div className='fixed bottom-0 left-0 right-0 z-[997]'>
       <div>
         <nav className='w-full bg-[#3E7B27] text-[#fff] font-medium bg-gradient-to-r from-[#8d8d8d] via-[#ffffff] to-[#3E7B27] pt-[5px]  backdrop-blur-3xl'>
             <div className=' w-full h-full bg-[#000]'>
