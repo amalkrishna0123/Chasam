@@ -193,7 +193,7 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
               <motion.div
               initial={{opacity:0, y:-50}}
               animate={{opacity:1, y:0, transition:{duration:.5, ease:"backInOut"}}}
-              className="px-4 text-sm text-[#000000] mb-14 font-semibold py-2 BoxShadow">
+              className="px-4 text-sm text-[#000000] mb-14 bg-[#fff] font-semibold py-2 BoxShadow">
                 <div className="TextFont font-bold text-xl mb-2 flex items-center gap-1.5">
                   Other Information <LuBadgeInfo className="text-[#093]"/>
                 </div>
