@@ -119,7 +119,7 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
               </div>
             </div>
 
-            <div className="px-4 mb-2.5 BoxShadow py-2">
+            <div className="px-4 mb-2.5 BoxShadow py-2 bg-[#fff]">
               <div className="text-xl font-bold text-[#000000] TextFont1">
                 Krishna Thulasi Cough Syrup
               </div>
@@ -131,7 +131,7 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
                 <span className="text-lg">260</span>
               </div>
             </div>
-            <div className="px-4 text-[12px] text-[#000000] mb-2.5 font-semibold BoxShadow py-2">
+            <div className="px-4 text-[12px] text-[#000000] bg-[#fff] mb-2.5 font-semibold BoxShadow py-2">
               <ul className="flex flex-col gap-1">
                 <li className="flex items-start">
                   <span className="text-2xl">
@@ -162,7 +162,7 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
             </div>
 
             {/* Usage */}
-            <div className={`px-4 BoxShadow py-2 ${showOtherDetails ? "mb-2.5" : "mb-14" }`}>
+            <div className={`px-4 BoxShadow py-2 bg-[#fff] ${showOtherDetails ? "mb-2.5" : "mb-14" }`}>
               <div className="relative">
                 <div className="font-bold mb-2 flex items-center gap-1.5">Usage <MdOutlineDataUsage className="text-[#093]"/></div>
                 <div className="font-semibold text-[12px]">
