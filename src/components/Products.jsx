@@ -2,16 +2,13 @@ import React, { useState, useEffect, useActionState } from "react";
 import p1 from "../assets/p1.jpg";
 import leaft2 from "../assets/leaf2.png";
 import PopUp from "./PopUp";
-import hmimage1 from "../assets/homeimage1.png";
-import hmimage2 from "../assets/homeimage2.png";
-import hmimage3 from "../assets/homeimage3.png";
-import { IoRefreshCircleSharp } from "react-icons/io5";
 import li1 from "../assets/li1.png"
 import {TbCoinRupee} from "react-icons/tb"
 import {MdOutlineArrowDropDown} from "react-icons/md"
 import li4 from "../assets/li4.png"
 import li3 from "../assets/li3.png"
 import li2 from "../assets/li2.png"
+import { CgSearch } from "react-icons/cg";
 
 const Products = () => {
     const [openPopUp, setOpenPopUp] = useState(false);
@@ -49,6 +46,14 @@ const Products = () => {
             </div>
           </div>
           {/* Category */}
+          <div className="px-2 w-full mb-3">
+            <div className="bg-gradient-to-r from-[#13c200] via-[#7eff87] to-[#006000] rounded-3xl p-[1px]">
+              <div className="relative w-full flex justify- items-center bg-[#fff] py-3 rounded-3xl">
+                <input type="text" placeholder="Search Product..." className="border-none w-full outline-none px-4 text-[#5B913B]"/>
+                <div className=" absolute right-5 text-2xl text-[#5B913B]"><CgSearch/></div>
+              </div>
+            </div>
+          </div>
           <div className="mb-5 overflow-x-auto relative scrollBar px-2">
             <ul className="flex items-center gap-2 font-semibold">
               <li className="flex justify-center items-center flex-col text-[12px] font-semibold gap-1">

@@ -8,6 +8,13 @@ import hmimage3 from "../assets/homeimage3.png";
 import { IoRefreshCircleSharp } from "react-icons/io5";
 
 const Home = () => {
+
+  const categoryLists = [
+    {name : "Back Pain", img : "https://temruk.tomograd-kuban.ru/upload/iblock/f56/j3qqf1g0a0azavswxthterxth7vdr5u2.jpeg"},
+    {name : "Weight Loss", img : "https://s.hdnux.com/photos/76/33/37/16365519/6/rawImage.jpg" },
+    {name : "Back Pain", img : "https://temruk.tomograd-kuban.ru/upload/iblock/f56/j3qqf1g0a0azavswxthterxth7vdr5u2.jpeg"},{name : "Back Pain", img : "https://temruk.tomograd-kuban.ru/upload/iblock/f56/j3qqf1g0a0azavswxthterxth7vdr5u2.jpeg"},{name : "Back Pain", img : "https://temruk.tomograd-kuban.ru/upload/iblock/f56/j3qqf1g0a0azavswxthterxth7vdr5u2.jpeg"},
+  ]
+
   return (
     <div className="overflow-hidden relative w-full">
       <div className="absolute top-0 bottom-0 left-0 right-0">
@@ -19,8 +26,8 @@ const Home = () => {
       </div>
       <section className="relative overflow-hidden">
         <div>
-          <div className="w-[600px] z-0 absolute h-[600px] rounded-full top-[-290px] bgGradient overflow-hidden"></div>
-          <div className="w-[600px] -z-10 absolute h-[600px] rounded-full top-[-270px] bgGradient opacity-30 "></div>
+          <div className="w-[600px] md:w-[1200px] md:h-[1200px] lg:w-[1600px] lg:h-[1600px] BannerCircle lg:top-[-900px] z-0 absolute h-[600px] rounded-full md:top-[-550px] top-[-290px] bgGradient overflow-hidden"></div>
+          <div className="w-[600px] md:w-[1200px] md:h-[1200px] -z-10 absolute h-[600px] BannerCircle2 rounded-full top-[-270px] lg:top-[-880px] md:top-[-520px] bgGradient opacity-30 "></div>
           <div className=" absolute w-[100px] h-[100px] rotate-90 left-[-10px] drop-shadow-md">
             <img src={leaft2} alt="" />
           </div>
@@ -35,8 +42,8 @@ const Home = () => {
               lorem ipsum jui
             </div>
           </div>
-          <div className="overflow-x-auto scrollBar">
-            <div className="flex justify-between items-center gap-5 relative pt-[50px] px-2 mb-5">
+          <div className="overflow-x-auto mx-auto max-w-[900px] scrollBar md:flex md:justify-center md:items-center md:gap-5 md:px-4">
+            <div className="flex justify-between md:justify-center items-center gap-5 relative pt-[50px] px-2 mb-5">
               <div className="w-[100px] relative h-[100px] flex justify-center items-center flex-col gap-2 overflow-hidden bg-[#EFE3C2] border border-[#fff] rounded-xl">
                 <div className="w-[100px] relative h-[60px] overflow-hidden rounded-xl">
                   <img
@@ -74,61 +81,60 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            <div className="hidden md:flex md:relative text-[#fff]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit adipisci corrupti itaque unde, cum reiciendis labore optio fugit pariatur voluptate asperiores perferendis</div>
           </div>
           <div className="px-2 mb-3 relative">
-            <div className="w-full h-[150px] BoxShadow border-[#fff] border rounded-xl bg-[#95CD41] overflow-hidden">
+            <div className="w-full h-[150px] md:h-auto BoxShadow border-[#fff] border rounded-xl bg-[#95CD41] overflow-hidden">
               <img src={p1} alt="" className="w-full h-full object-cover" />
             </div>
           </div>
           {/* Category */}
-          <div className="px-2 mb-2 text-xl font-bold text-[#396C25] text-center">Product  Categories</div>
+          <div className="px-2 mb-2 text-xl font-bold text-[#396C25] text-center lg:text-3xl">Product  Categories</div>
           <div className="grid grid-cols-2 px-2 gap-2 mb-5">
             <a href="products">
-            <div className="w-full h-[150px] rounded-3xl overflow-hidden relative BoxShadow border border-[#fff]">
-              <div className=" absolute w-full h-full bg-[#00000094]"></div>
-              <div className="absolute bottom-1 text-[#fff] text-center px-2 w-full">Back Pain</div>
+            <div className="w-full h-[150px] md:h-[200px] lg:h-[300px] rounded-3xl overflow-hidden relative BoxShadow border border-[#fff]">
+              <div className=" absolute w-full h-full bg-[#06660c48]"></div>
+              <div className="absolute bottom-1 text-[#fff] text-center px-2 w-full md:text-3xl">Back Pain</div>
               <img src="https://temruk.tomograd-kuban.ru/upload/iblock/f56/j3qqf1g0a0azavswxthterxth7vdr5u2.jpeg" className="w-full h-full object-cover" alt="" />
             </div>
             </a>
             <a href="products">
-            <div className="w-full h-[150px] rounded-3xl overflow-hidden relative BoxShadow border border-[#fff]">
-              <div className=" absolute w-full h-full bg-[#00000094]"></div>
-              <div className="absolute bottom-1 text-[#fff] text-center px-2 w-full">Weight Loss</div>
+            <div className="w-full h-[150px] md:h-[200px] lg:h-[300px] rounded-3xl overflow-hidden relative BoxShadow border border-[#fff]">
+              <div className=" absolute w-full h-full bg-[#06660c48]"></div>
+              <div className="absolute bottom-1 text-[#fff] text-center px-2 w-full md:text-3xl">Weight Loss</div>
               <img src="https://s.hdnux.com/photos/76/33/37/16365519/6/rawImage.jpg" className="w-full h-full object-cover" alt="" />
             </div>
             </a>
             <div>
-            <div className="w-full h-[150px] rounded-3xl overflow-hidden relative BoxShadow border border-[#fff]">
-            <div className=" absolute w-full h-full bg-[#00000094]"></div>
-            <div className="absolute bottom-1 text-[#fff] text-center px-2 w-full">Knee Pain</div>
+            <div className="w-full h-[150px] md:h-[200px] lg:h-[300px] rounded-3xl overflow-hidden relative BoxShadow border border-[#fff]">
+            <div className=" absolute w-full h-full bg-[#06660c48]"></div>
+            <div className="absolute bottom-1 text-[#fff] text-center px-2 w-full md:text-3xl">Knee Pain</div>
               <img src="https://www.soupstock.in/system/files/images/7a/9e/shutterstock_1444117922.jpg" className="w-full h-full object-cover" alt="" />
             </div>
             </div>
             <a href="products">
-            <div className="w-full h-[150px] rounded-3xl overflow-hidden relative BoxShadow border border-[#fff]">
-            <div className=" absolute w-full h-full bg-[#00000094]"></div>
-            <div className="absolute bottom-1 text-[#fff] text-center px-2 w-full">Migraine</div>
+            <div className="w-full h-[150px] md:h-[200px] lg:h-[300px] rounded-3xl overflow-hidden relative BoxShadow border border-[#fff]">
+            <div className=" absolute w-full h-full bg-[#06660c48]"></div>
+            <div className="absolute bottom-1 text-[#fff] text-center px-2 w-full md:text-3xl">Migraine</div>
               <img src="https://static.mk.ru/upload/entities/2022/01/10/19/articles/facebookPicture/09/47/3d/3b/5ea28e7e01a644a0db554c43e9584a44.jpg" className="w-full h-full object-cover" alt="" />
             </div>
             </a>
             <a href="products">
-            <div className="w-full h-[150px] rounded-3xl overflow-hidden relative BoxShadow border border-[#fff]">
-            <div className=" absolute w-full h-full bg-[#00000094]"></div>
-            <div className="absolute bottom-1 text-[#fff] text-center px-2 w-full">Skin Issues</div>
+            <div className="w-full h-[150px] md:h-[200px] lg:h-[300px] rounded-3xl overflow-hidden relative BoxShadow border border-[#fff]">
+            <div className=" absolute w-full h-full bg-[#06660c48]"></div>
+            <div className="absolute bottom-1 text-[#fff] text-center px-2 w-full md:text-3xl">Skin Issues</div>
               <img src="https://duneego.ru/wp-content/uploads/2022/04/lechenie-sosudistyh-patologiy.jpg" className="w-full h-full object-cover" alt="" />
             </div>
             </a>
             <a href="products">
-            <div className="w-full h-[150px] rounded-3xl overflow-hidden relative BoxShadow border border-[#fff]">
-            <div className=" absolute w-full h-full bg-[#00000094]"></div>
-            <span className="text-5xl relative flex justify-center items-center h-full"><IoRefreshCircleSharp className="border border-[#fff] rounded-full"/></span>
-            <div className="absolute bottom-1 text-[#fff] text-center px-2 w-full">See More</div>
-              
+            <div className="w-full h-[150px] md:h-[200px] lg:h-[300px] rounded-3xl overflow-hidden relative BoxShadow border border-[#fff]">
+            <div className=" absolute w-full h-full bg-[#06660c48]"></div>
+            <span className="text-5xl md:text-8xl relative flex justify-center items-center h-full"><IoRefreshCircleSharp className="border border-[#fff] rounded-full"/></span>
+            <div className="absolute bottom-1 text-[#fff] text-center px-2 w-full md:text-3xl">See More</div>
             </div>
             </a>
           </div>
         </div>
-        
       </section>
       {/* Footer */}
       <section className="w-full flex flex-col justify-center items-center bg-[#000000] h-auto mb-[53px]">

@@ -1,13 +1,18 @@
-import React from "react";
-import { IoClose } from "react-icons/io5";
+import React, { useState } from "react";
 import li1 from "../assets/li1.png";
 import { FaChevronCircleLeft } from "react-icons/fa";
 import { MdCurrencyRupee } from "react-icons/md";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdLocalPhone } from "react-icons/md";
 import { LuDot } from "react-icons/lu";
+import { motion } from "framer-motion";
+import { MdOutlineDataUsage } from "react-icons/md";
+import { FiPlus } from "react-icons/fi";
+import { LuBadgeInfo } from "react-icons/lu";
+import { FiMinus } from "react-icons/fi";
 
 const PopUp = ({ openPopUp, setOpenPopUp }) => {
+  const [showOtherDetails, setShowOtherDetails] = useState(false);
   return (
     <div className="fixed top-0 bottom-0 left-0 right-0 bg-[#178000] z-[999]">
       <div className=" absolute w-full bottom-0 py-2 bg-[#fff] z-[999] flex justify-center items-center gap-5 BoxShadow">
@@ -21,7 +26,15 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
         </button>
       </div>
       <div className="px-2">
-        <div className="fixed w-[95%] mx-auto top-2 bottom-0 rounded-t-3xl z-[998] popUpBg bg-[#fff] backdrop-blur-sm overflow-y-auto scrollBar">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: { duration: 1.2, ease: "backInOut" },
+          }}
+          className="fixed w-[95%] mx-auto top-2 bottom-0 rounded-t-3xl z-[998] popUpBg bg-[#fff] backdrop-blur-sm overflow-y-auto scrollBar"
+        >
           <div>
             <img src="" alt="" />
           </div>
@@ -106,7 +119,7 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
               </div>
             </div>
 
-            <div className="px-4 mb-2 BoxShadow">
+            <div className="px-4 mb-2.5 BoxShadow py-2">
               <div className="text-xl font-bold text-[#000000] TextFont1">
                 Krishna Thulasi Cough Syrup
               </div>
@@ -118,7 +131,7 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
                 <span className="text-lg">260</span>
               </div>
             </div>
-            <div className="px-4 text-[12px] text-[#000000] mb-3 font-semibold BoxShadow">
+            <div className="px-4 text-[12px] text-[#000000] mb-2.5 font-semibold BoxShadow py-2">
               <ul className="flex flex-col gap-1">
                 <li className="flex items-start">
                   <span className="text-2xl">
@@ -147,68 +160,101 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
                 </li>
               </ul>
             </div>
-            {/* Other Details */}
-            <div className="px-4 text-sm text-[#000000] mb-20 font-semibold">
-              <div className="TextFont font-bold text-xl mb-2">
-                Other Information
+
+            {/* Usage */}
+            <div className={`px-4 BoxShadow py-2 ${showOtherDetails ? "mb-2.5" : "mb-14" }`}>
+              <div className="relative">
+                <div className="font-bold mb-2 flex items-center gap-1.5">Usage <MdOutlineDataUsage className="text-[#093]"/></div>
+                <div className="font-semibold text-[12px]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore quas, provident minus, assumenda laboriosam sunt autem
+                  quisquam nisi, aliquam molestiae dolore reprehenderit commodi
+                  beatae hic sint dolores architecto deleniti? Commodi!
+                </div>
               </div>
-              <ul className="flex flex-col gap-1">
-                <li className="flex items-start w-full gap-2">
-                  <div className="w-[40%] flex text-[12px] items-center font-bold">
-                    <span className="text-2xl">
-                      <LuDot />
-                    </span>
-                    MRP
-                  </div>
-                  <div className="w-[60%] text-[12px]">
-                    : Rs. 260.00 inclussive of all taxes{" "}
-                    <span className="block">
-                      (MRP changes as per size selection)
-                    </span>
-                  </div>
-                </li>
-                <li className="flex items-start w-full gap-2">
-                  <div className="w-[40%] flex text-[12px] items-center font-bold">
-                    <span className="text-2xl">
-                      <LuDot />
-                    </span>
-                    Net Qty
-                  </div>
-                  <div className="w-[60%] text-[12px]">: 1 N</div>
-                </li>
-                <li className="flex items-start w-full gap-2">
-                  <div className="w-[40%] flex text-[12px] items-center font-bold">
-                    <span className="text-2xl">
-                      <LuDot />
-                    </span>
-                    Manufactured By
-                  </div>
-                  <div className="w-[60%] text-[12px]">
-                    : Chasam Ayurvedic Clinic, Vythiri, Wayanad, Kerala
-                  </div>
-                </li>
-                <li className="flex items-center w-full gap-2">
-                  <div className="w-[40%] flex text-[12px] items-center font-bold">
-                    <span className="text-2xl">
-                      <LuDot />
-                    </span>
-                    Country Of Origin
-                  </div>
-                  <div className="w-[60%] text-[12px]">: India</div>
-                </li>
-                <li className="flex items-center w-full gap-2">
-                  <div className="w-[40%] flex text-[12px] items-center font-bold">
-                    <span className="text-2xl">
-                      <LuDot />
-                    </span>
-                    Customer Care Address
-                  </div>
-                  <div className="w-[60%] text-[12px]">: India</div>
-                </li>
-              </ul>
+              <div className="text-[12px] font-semibold items-center flex justify-end right-0">
+                <div className="flex items-center" onClick={() => setShowOtherDetails(!showOtherDetails)}>
+                  {showOtherDetails ? 
+                  <div className="flex items-center gap-0.5">
+                    <FiMinus/>
+                    Less
+                  </div> : 
+                  <div className="flex items-center gap-0.5">
+                    <FiPlus />
+                    More
+                  </div>}
+                  
+                </div>
+              </div>
             </div>
+
+            {/* Other Details */}
+            {showOtherDetails && (
+              <motion.div
+              initial={{opacity:0, y:-50}}
+              animate={{opacity:1, y:0, transition:{duration:.5, ease:"backInOut"}}}
+              className="px-4 text-sm text-[#000000] mb-14 font-semibold py-2 BoxShadow">
+                <div className="TextFont font-bold text-xl mb-2 flex items-center gap-1.5">
+                  Other Information <LuBadgeInfo className="text-[#093]"/>
+                </div>
+                <ul className="flex flex-col gap-1">
+                  <li className="flex items-start w-full gap-2">
+                    <div className="w-[40%] flex text-[12px] items-center font-bold">
+                      <span className="text-2xl">
+                        <LuDot />
+                      </span>
+                      MRP
+                    </div>
+                    <div className="w-[60%] text-[12px]">
+                      : Rs. 260.00 inclussive of all taxes{" "}
+                      <span className="block">
+                        (MRP changes as per size selection)
+                      </span>
+                    </div>
+                  </li>
+                  <li className="flex items-start w-full gap-2">
+                    <div className="w-[40%] flex text-[12px] items-center font-bold">
+                      <span className="text-2xl">
+                        <LuDot />
+                      </span>
+                      Net Qty
+                    </div>
+                    <div className="w-[60%] text-[12px]">: 1 N</div>
+                  </li>
+                  <li className="flex items-start w-full gap-2">
+                    <div className="w-[40%] flex text-[12px] items-center font-bold">
+                      <span className="text-2xl">
+                        <LuDot />
+                      </span>
+                      Manufactured By
+                    </div>
+                    <div className="w-[60%] text-[12px]">
+                      : Chasam Ayurvedic Clinic, Vythiri, Wayanad, Kerala
+                    </div>
+                  </li>
+                  <li className="flex items-center w-full gap-2">
+                    <div className="w-[40%] flex text-[12px] items-center font-bold">
+                      <span className="text-2xl">
+                        <LuDot />
+                      </span>
+                      Country Of Origin
+                    </div>
+                    <div className="w-[60%] text-[12px]">: India</div>
+                  </li>
+                  <li className="flex items-center w-full gap-2">
+                    <div className="w-[40%] flex text-[12px] items-center font-bold">
+                      <span className="text-2xl">
+                        <LuDot />
+                      </span>
+                      Customer Care Address
+                    </div>
+                    <div className="w-[60%] text-[12px]">: India</div>
+                  </li>
+                </ul>
+              </motion.div>
+            )}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

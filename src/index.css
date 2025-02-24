@@ -17,10 +17,6 @@ html{
 .TextFont1{
     /* font-family: 'textFont'; */
 }
-/* body{
-    background: url('https://img.freepik.com/free-vector/hand-drawn-olive-green-background_23-2149725222.jpg?t=st=1739964142~exp=1739967742~hmac=2bc705054c2a2430867275dad61e87e6b18ad0dda207c3f165ca54f906f8a593&w=1060');
-    opacity: .5;
-} */
 .textGradient {
     background: linear-gradient(120deg, #ffa200, #f7f7f7);
     -webkit-background-clip: text;
@@ -60,3 +56,41 @@ html{
       border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
   }
+  @media screen and (min-width : 1600px) {
+    .BannerCircle{
+        width: 2000px;
+        height: 2000px;
+        top: -1000px;
+      }
+      .BannerCircle2{
+        width: 2000px;
+        height: 2000px;
+        top: -980px;
+      }
+  }
+
+  @media screen and (min-width : 1700px) {
+    .BannerCircle{
+        width: 2200px;
+        height: 2200px;
+        top: -1200px;
+      }
+      .BannerCircle2{
+        width: 2200px;
+        height: 2200px;
+        top: -1160px;
+      }
+  }
+  @media screen and (min-width : 1800px) {
+    .BannerCircle{
+        width: 2400px;
+        height: 2400px;
+        top: -1300px;
+      }
+      .BannerCircle2{
+        width: 2400px;
+        height: 2400px;
+        top: -1160px;
+      }
+  }
+  
