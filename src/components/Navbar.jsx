@@ -14,7 +14,7 @@ const Navbar = () => {
               <ul className='flex justify-evenly items-start gap-10 py-3 px-4 text-2xl'>
                   <Link to="/"><li className='flex flex-col justify-center items-center'><FaHome/></li></Link>
                   <Link to="/products"><li><GiMedicinePills/></li></Link>
-                  <li className='flex flex-col justify-center items-center'> <FaCircleUser/></li>
+                  <Link to="/contact"><li className='flex flex-col justify-center items-center'> <FaCircleUser/></li></Link>
               </ul>
             </div>
         </nav>

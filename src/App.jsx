@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Introduction from "./components/Introduction";
 import Products from "./components/Products";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       )}
     </>

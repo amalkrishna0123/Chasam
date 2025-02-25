@@ -93,4 +93,13 @@ html{
         top: -1160px;
       }
   }
+  .ContactBg{
+    background: linear-gradient(0deg, rgba(25,81,6,1) 0%, rgba(5,217,115,1) 100%);
+    mix-blend-mode: multiply;
+  }
+  .textGradient2{
+    background: linear-gradient(120deg, #00f000, #024600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   

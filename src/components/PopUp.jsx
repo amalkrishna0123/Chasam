@@ -183,11 +183,9 @@ const PopUp = ({ openPopUp, setOpenPopUp }) => {
                     <FiPlus />
                     More
                   </div>}
-                  
                 </div>
               </div>
             </div>
-
             {/* Other Details */}
             {showOtherDetails && (
               <motion.div
